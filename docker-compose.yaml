@@ -1,0 +1,15 @@
+# NOTA: SQLite es una base de datos embebida (serverless) basada en un archivo local.
+# En Electron, 'better-sqlite3' corre directamente en tu app y no necesita un contenedor Docker.
+# Este contenedor opcional levanta 'sqlite-web', una interfaz gráfica web para explorar y gestionar tu base de datos SQLite.
+services:
+  sqlite-web:
+    image: coleifer/sqlite-web
+    platform: linux/amd64
+    container_name: inventario-db
+    restart: unless-stopped
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./:/data
+    environment:
+      - SQLITE_DATABASE=/data/${VITE_DB_FILE_NAME:-sqlite.db}
