@@ -22,8 +22,8 @@
     "db:up": "docker-compose up -d",
     "db:down": "docker-compose down",
     "db:gen": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio",
+    "db:mig": "drizzle-kit migrate",
+    "db:stu": "drizzle-kit studio",
     "db:push": "drizzle-kit push",
     "db:reset": "docker-compose down && npm run db:up && npm run db:push"
   },
@@ -33,11 +33,18 @@
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
     "@libsql/client": "^0.18.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tanstack/react-router": "^1.170.40",
     "better-auth": "^1.7.6",
     "conf": "^15.1.0",
     "dotenv": "^18.0.4",
     "drizzle-orm": "1.0.0-rc.4",
-    "electron-updater": "^6.3.9"
+    "electron-updater": "^6.3.9",
+    "react-hook-form": "^7.89.0",
+    "tailwindcss": "^4.3.3",
+    "zod": "^4.6.5",
+    "zustand": "^5.0.15"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^3.0.0",

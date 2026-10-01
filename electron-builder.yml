@@ -1,7 +1,7 @@
 appId: com.electron.app
 productName: pos-system
 protocols:
-  - name: "POS System Protocol"
+  - name: 'POS System Protocol'
     schemes:
       - com.electron.app
 directories:

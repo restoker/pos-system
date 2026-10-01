@@ -1,6 +1,8 @@
 import { createAuthClient } from 'better-auth/client'
 import { electronClient } from '@better-auth/electron/client'
 import { storage } from '@better-auth/electron/storage'
+import { inferAdditionalFields } from 'better-auth/client/plugins'
+import { auth } from './auth'
 
 export const authClient = createAuthClient({
   baseURL: process.env.VITE_BETTER_AUTH_URL || 'http://localhost:5173',
@@ -11,6 +13,7 @@ export const authClient = createAuthClient({
         scheme: 'com.electron.app'
       },
       storage: storage()
-    })
+    }),
+    inferAdditionalFields<typeof auth>()
   ]
 })

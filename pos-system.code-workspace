@@ -1,8 +1,11 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../temaplates react/tailwindui 10:01:26/react/ui-blocks"
+    }
+  ],
+  "settings": {}
 }
