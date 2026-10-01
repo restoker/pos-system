@@ -269,7 +269,7 @@ function LoginPage(): React.JSX.Element {
       <div className="relative hidden w-0 flex-1 lg:block">
         <img
           alt=""
-          src="https://cdn.cosmos.so/01a0e012-b644-7213-a7aa-9736490fd4ba?format=webp"
+          src="https://cdn.cosmos.so/d744ff96-04c7-4e4f-a3cd-341e0ecc816c?format=webp"
           className="absolute inset-0 size-full object-cover"
         />
       </div>
